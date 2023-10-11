@@ -26,8 +26,3 @@ Verify the installation by running the following command:
 ```shell
 npx hardhat verify --network polygon-mumbai {CONTRACT_ADDRESS}
 ```
-
-```shell
-{CONTRACT_ADDRESS} : 0x462cEF234707C9a4Bd9149dF47Df48344773B14F
-
-```

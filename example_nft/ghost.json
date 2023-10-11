@@ -1,0 +1,10 @@
+{
+    "name": "Ghost",
+    "description": "Digital art of a ghost holding a pink umbrella.",
+    "image": "https://ipfs.io/ipfs/QmYNcCbMw6hiL7k7LAiqRtfagfb2nXu7KhKVzwGi69ptQF",
+    "properties": {
+      "category": "Art",
+      "collections": ["Ghosts", "Umbrellas", "Halloween"],
+      "creator": "Kotan"
+    }
+  }
