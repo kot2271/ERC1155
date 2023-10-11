@@ -17,7 +17,12 @@ Create a new task(s) and save it(them) in the folder "tasks". Add a new task_nam
 
 Running a mint task:
 ```shell
-npx hardhat mint --nft {CONTRACT_ADDRESS} --uri {IMAGE_URI}  --network polygon-mumbai
+npx hardhat mint --nft {CONTRACT_ADDRESS} --uri {IMAGE_URI} --network polygon-mumbai
+```
+
+Running a burn task:
+```shell
+npx hardhat burn --nft {CONTRACT_ADDRESS} --token-id {TOKEN_ID}  --network polygon-mumbai
 ```
 
 
@@ -25,4 +30,9 @@ npx hardhat mint --nft {CONTRACT_ADDRESS} --uri {IMAGE_URI}  --network polygon-m
 Verify the installation by running the following command:
 ```shell
 npx hardhat verify --network polygon-mumbai {CONTRACT_ADDRESS}
+```
+
+```shell
+{CONTRACT_ADDRESS}: 0xA6f57aF6d87365b0c4B916C62a583C75bB7F15f6
+0x2ECc2744e85869B64dAD3D3E2C7BE06402d8D3d6
 ```

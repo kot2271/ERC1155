@@ -9,11 +9,9 @@ contract NFT is ERC1155, Ownable {
 
   mapping(uint256 => string) private _tokenUris;
 
-  mapping(string => uint256) private _uriToTokenId;
-
   event Minted(address owner, uint256 tokenId);
 
-  event Burned(address owner, uint256 tokenId);
+  event Burned(address indexed burner, address indexed from, uint256 id, uint256 amount);
 
   constructor() ERC1155("") {
   }
@@ -23,16 +21,14 @@ contract NFT is ERC1155, Ownable {
     tokenCount ++;
     _mint(_owner, currentTokenId, 1, "");
     setURI(currentTokenId, tokenUri);
-    _uriToTokenId[tokenUri] = currentTokenId;
     emit Minted(_owner, currentTokenId);
   }
 
-  function burn(address owner, string memory tokenUri) public onlyOwner {
-    uint256 tokenId = _uriToTokenId[tokenUri];
-    require(balanceOf(owner, tokenId) > 0, "Owner does not own token");
+  function burn(address _owner, uint256 tokenId) public onlyOwner {
+    require(balanceOf(_owner, tokenId) > 0, "Owner does not own token");
     tokenCount --;
-    _burn(owner, tokenId, 1);
-    emit Burned(owner, tokenId);
+    _burn(_owner, tokenId, 1);
+    emit Burned(msg.sender, _owner, tokenId, 1);
   }
 
   function setURI(uint256 tokenId, string memory tokenUri) internal {
@@ -42,5 +38,4 @@ contract NFT is ERC1155, Ownable {
   function uri(uint256 tokenId) public view override returns (string memory) {
     return _tokenUris[tokenId]; 
   }
-
 }
