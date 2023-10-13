@@ -1,42 +1,24 @@
 {
-    "name": "Ghost",
-    "description": "Digital art of a ghost holding a pink umbrella.",
-    "image": "https://ipfs.io/ipfs/QmXWCpuTCHeCKK19vTWUHArzUjDtv3SJss5LRdy8YZ2rSA?filename=Ghost.png",
-    "attributes": [
-      {
-        "trait_type": "Base", 
-        "value": "Ghost"
-      }, 
-      {
-        "trait_type": "Eyes", 
-        "value": "Big"
-      }, 
-      {
-        "trait_type": "Mouth", 
-        "value": "Surprised"
-      }, 
-      {
-        "trait_type": "Level", 
-        "value": 5
-      }, 
-      {
-        "trait_type": "Stamina", 
-        "value": 50
-      }, 
-      {
-        "display_type": "boost_number", 
-        "trait_type": "Aqua Power", 
-        "value": 40
-      }, 
-      {
-        "display_type": "boost_percentage", 
-        "trait_type": "Stamina Increase", 
-        "value": 30
-      }, 
-      {
-        "display_type": "number", 
-        "trait_type": "Generation", 
-        "value": 1
-      }
-    ]
-  }
+	"name": "ghost",
+	"description": "Digital art of a ghost holding a pink umbrella.",
+	"image": "https://bafybeieifo4yiakyf2dl2glcpcvg7jld24pqnhhr62txzxfhjdcgunp334.ipfs.dweb.link",
+	"properties": {
+		"simple_property": "example value",
+		"rich_property": {
+			"name": "Name",
+			"value": "123",
+			"display_value": "123 Example Value",
+			"class": "emphasis",
+			"css": {
+				"color": "#ffffff",
+				"font-weight": "bold",
+				"text-decoration": "underline"
+			}
+		},
+		"array_property": {
+			"name": "Name",
+			"value": [1,2,3,4],
+			"class": "emphasis"
+		}
+	}
+}
