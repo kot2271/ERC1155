@@ -36,3 +36,4 @@ npx hardhat verify --network polygon-mumbai {CONTRACT_ADDRESS}
 {CONTRACT_ADDRESS}: 0xA6f57aF6d87365b0c4B916C62a583C75bB7F15f6
 0x2ECc2744e85869B64dAD3D3E2C7BE06402d8D3d6
 ```
+[Ghost NFT](https://testnets.opensea.io/assets/mumbai/0xa6f57af6d87365b0c4b916c62a583c75bb7f15f6/4)

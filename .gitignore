@@ -6,6 +6,7 @@ typechain
 typechain-types
 src
 types
+.Ds_Store
 
 # Hardhat files
 cache
